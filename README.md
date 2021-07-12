@@ -62,7 +62,7 @@ Lista de containers que serão criados:
 ```json
 {
 
-        "title": "string",
+        "title": string,
         "startPosition": {
             "latitude": number,
             "longitude": number
