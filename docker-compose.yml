@@ -26,7 +26,7 @@ services:
 
   db:
     build: ./backend/.docker/postgres
-    container_name: your-destination-store-api-db
+    container_name: your-destination-api-db
     restart: always
     tty: true
     volumes:
@@ -41,7 +41,7 @@ services:
       
   pgadmin:
     image: dpage/pgadmin4
-    container_name: your-destination-store-api-pgadmin
+    container_name: your-destination-pgadmin
     tty: true
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@user.com
