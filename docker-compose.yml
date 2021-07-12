@@ -1,26 +1,26 @@
-version: '3'
+version: "3"
 services:
   app-frontend:
     build: ./frontend/.docker
     entrypoint: ./.docker/entrypoint.sh
     container_name: your-destination-app-frontend
     ports:
-      - '3001:3001'
+      - "3001:3001"
     volumes:
-      - './frontend:/home/node/app'
+      - "./frontend:/home/node/app"
     extra_hosts:
-      - 'host.docker.internal:172.17.0.1'
+      - "host.docker.internal:172.17.0.1"
 
   app-backend:
     build: ./backend/.docker
-    entrypoint: ./.docker/entrypoint.sh
+    entrypoint: dockerize -wait tcp://db:5432 -timeout 40s ./.docker/entrypoint.sh
     container_name: your-destination-app-backend
     ports:
-      - '3000:3000'
+      - "3000:3000"
     volumes:
-      - './backend:/home/node/app'
+      - "./backend:/home/node/app"
     extra_hosts:
-      - 'host.docker.internal:172.17.0.1'
+      - "host.docker.internal:172.17.0.1"
     depends_on:
       - db
 
@@ -30,15 +30,15 @@ services:
     restart: always
     tty: true
     volumes:
-      - './backend/.docker/dbdata:/var/lib/postgresql/data'
-      - './backend/.docker/postgres:/docker-entrypoint-initdb.d'
+      - "./backend/.docker/dbdata:/var/lib/postgresql/data"
+      - "./backend/.docker/postgres:/docker-entrypoint-initdb.d"
     ports:
-      - '5432:5432'
+      - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=your_destination
       - FILE_DATA_POSTGRES=/.docker/postgres/init.sql
-      
+
   pgadmin:
     image: dpage/pgadmin4
     container_name: your-destination-pgadmin
@@ -47,6 +47,6 @@ services:
       - PGADMIN_DEFAULT_EMAIL=admin@user.com
       - PGADMIN_DEFAULT_PASSWORD=123456
     ports:
-      - '9000:80'
+      - "9000:80"
     depends_on:
       - db
