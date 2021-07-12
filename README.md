@@ -86,5 +86,5 @@ docker-compose up
 
 ### Acesse ao PgAdmin
 
-- Você pode acessar o PgAdmin no seu navegador através do seguinte endereço: ``http://
+- Você pode acessar o PGAdmin no seu navegador através do seguinte endereço: ``http://
 localhost:9000/`` verifique os dados de acesso em docker-compose.yml
