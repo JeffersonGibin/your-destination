@@ -65,7 +65,7 @@ docker-compose up
 
 - 3000 - Backend
 - 3001 - Frontend
-- 5432 - Postgresql
+- 5432 - PostgreSQL
 - 9000 - PgAdmin
 
 ### Acesse ao PgAdmin
