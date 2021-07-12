@@ -57,7 +57,7 @@ docker-compose up
 |--- |--- |--- |
 | POST | ```/routes``` | JSON BODY |
 | GET | ```/routes/:[route_uuid]``` | ```uuid da rota```|
-| PATH | ```/routes/:[route_uuid]``` | ```uuid da rota``` + JSON BODY |
+| PATCH | ```/routes/:[route_uuid]``` | ```uuid da rota``` + JSON BODY |
 | DELETE | ```/routes/:[route_uuid]``` | ```uuid da rota``` |
 
 
