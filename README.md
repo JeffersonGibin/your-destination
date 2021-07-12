@@ -14,9 +14,9 @@ Nesse desafio você trabalhará com backend e frontend juntos para consolidar os
 - Ao acessar http://localhost:3001 a aplicação React precisa consumir e listar "rotas" do endpoint do Nest.js: http://localhost:3000/routes.
 
 - O endpoint http://localhost:3000/routes precisa retornar 5 rotas com os seguintes dados: 
-*  **title:** título da rota
-*  **startPosition:** contendo os atributos latitude e longitude
-*  **endPosition:** contendo os atributos latitude e longitude
+    *  **title:** título da rota
+    *  **startPosition:** contendo os atributos latitude e longitude
+    *  **endPosition:** contendo os atributos latitude e longitude
 
 
 ## Configurar /etc/hosts
