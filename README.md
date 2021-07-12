@@ -32,14 +32,18 @@ Em todos os sistemas operacionais é necessário abrir o programa para editar o 
 
 #### 1 - Execute o comando a seguir para subir todos os containers:
 
+```
+docker-compose up
+```
+Lista de containers que serão criados:
+
+
 * app-frontend
 * app-backend
 * db
 * pgadmin
 
-```
-docker-compose up
-```
+
 
 #### 2 - Executar Migration
 
