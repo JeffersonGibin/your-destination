@@ -51,13 +51,29 @@ docker-compose up
 
 ## Rotas do Backend
 
+**Payload**
+```json
+{
+
+        "title": "string",
+        "startPosition": {
+            "latitude": number,
+            "longitude": number
+        },
+        "endPosition": {
+            "latitude": number,
+            "longitude": number
+        }
+    }
+```
+
 **Host:** http://localhost:3000
 
 | Método | Route | Parâmetros |
 |--- |--- |--- |
-| POST | ```/routes``` | JSON BODY |
+| POST | ```/routes``` | Payload |
 | GET | ```/routes/:[route_uuid]``` | ```uuid da rota```|
-| PATCH | ```/routes/:[route_uuid]``` | ```uuid da rota``` + JSON BODY |
+| PATCH | ```/routes/:[route_uuid]``` | ```uuid da rota``` + Payload |
 | DELETE | ```/routes/:[route_uuid]``` | ```uuid da rota``` |
 
 
