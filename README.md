@@ -93,5 +93,4 @@ Lista de containers que serão criados:
 
 ### Acesse ao PgAdmin
 
-- Você pode acessar o PGAdmin no seu navegador através do seguinte endereço: http://
-localhost:9000/ verifique os dados de acesso em docker-compose.yml
+- Você pode acessar o PGAdmin no seu navegador através do seguinte endereço: http://localhost:9000 verifique os dados de acesso em docker-compose.yml
