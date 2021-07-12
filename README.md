@@ -47,7 +47,7 @@ Lista de containers que serão criados:
 
 #### 2 - Executar Migration
 
-- Aguarde até que todos os containers estejam **UP** e você receba o seguinte erro **"Unable to connect to the database.**
+- Aguarde até que todos os containers estejam **UP** e você receba o seguinte erro **Unable to connect to the database.**
 - Acesse o container ``app-backend`` com ``docker-compose exec app-backend bash``
 - Execute o seguinte comando: ``npm run typeorm migration:run`` no termina do container
 - Note: Isso necessário executar apenas uma vez desde que o volume do banco de dados  do container não seja removido
