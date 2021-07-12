@@ -61,17 +61,16 @@ Lista de containers que serão criados:
 **Payload**
 ```typescript
 {
-
-        "title": string,
-        "startPosition": {
-            "latitude": number,
-            "longitude": number
-        },
-        "endPosition": {
-            "latitude": number,
-            "longitude": number
-        }
-    }
+  "title": string,
+  "startPosition": {
+      "latitude": number,
+      "longitude": number
+  },
+  "endPosition": {
+      "latitude": number,
+      "longitude": number
+  }
+ }
 ```
 
 **Host:** http://localhost:3000
