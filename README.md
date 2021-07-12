@@ -1,6 +1,6 @@
 ## Enunciado do Desafio
 
-Nesse desafio você trabalhará com backend e frontend juntos para consolidar os conhecimentos adquiridos nas aulas de Nest.js e React.js.
+Nesse desafio você trabalhará com backend e frontend juntos.
 
 
 ### Para isso:
