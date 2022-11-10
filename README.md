@@ -46,14 +46,11 @@ Lista de containers que serão criados:
 * db
 * pgadmin
 
-
-
 #### 2 - Executar Migration
 
 - Aguarde até que todos os containers estejam **UP** e você receba o seguinte erro **Unable to connect to the database.**
 - Acesse o container ``app-backend`` com ``docker-compose exec app-backend bash``
 - Execute o seguinte comando: ``npm run typeorm migration:run`` no terminal do container
-- Note: Isso necessário executar apenas uma vez desde que o volume do banco de dados  do container não seja removido
 
 
 ## Rotas do Backend
@@ -90,6 +87,6 @@ Lista de containers que serão criados:
 - 5432 - PostgreSQL
 - 9000 - PgAdmin
 
-### Acesse ao PgAdmin
+### Acesso ao PgAdmin
 
 - Você pode acessar o PGAdmin no seu navegador através do seguinte endereço: http://localhost:9000 verifique os dados de acesso em docker-compose.yml
